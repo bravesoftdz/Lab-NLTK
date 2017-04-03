@@ -9,7 +9,8 @@ Pleasse check the [NLTK Book](http://www.nltk.org/book/) to understand how NLTK 
 #### Resources list
 
 - [Wikipedia](https://en.wikipedia.org/wiki/Natural_Language_Toolkit)
-- [NLTK Tutorial](https://www.youtube.com/playlist?list=PLQVvvaa0QuDf2JswnfiGkliBInZnIC4HL)
+- [Videos NLTK Tutorial](https://www.youtube.com/playlist?list=PLQVvvaa0QuDf2JswnfiGkliBInZnIC4HL)
+- [Python 3 Text Processing with NLTK 3 Cookbook](https://www.packtpub.com/mapt/book/application-development/9781782167853)
 
 Enjoy this repo and have a coffee ☕.
 
