@@ -15,3 +15,7 @@ Pleasse check the [NLTK Book](http://www.nltk.org/book/) to understand how NLTK 
 Enjoy this repo and have a coffee ☕.
 
 More [about me](https://github.com/johnidm/about-me/blob/master/README.md).
+
+#### Notes
+
+> We are using Python 3.6+
