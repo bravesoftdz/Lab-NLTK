@@ -1,5 +1,6 @@
 # https://apigee.com/embed/console/twitter
-#https://github.com/ckoepp/TwitterSearch
+# https://github.com/ckoepp/TwitterSearch
+
 
 import sys
 import re
@@ -34,7 +35,6 @@ try:
     users = []
     hashtags = []
     links = []
-
     for tweet in ts.search_tweets_iterable(tuo):
         users += get_users(tweet['text'])
         hashtags += get_hashtag(tweet['text'])
