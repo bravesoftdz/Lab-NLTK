@@ -44,9 +44,15 @@ try:
         links += get_urls(tweet['text'])
     
     data = {
-        'mentioned_users': users,
-        'hashtags': hashtags,
-        'referenced_links': links,
+        'frequency': {
+            'mentioned_users': {c: users.count(c) for c in users},
+            'hashtags': {c: hashtags.count(c) for c in hashtags},
+        },
+        'data': {
+            'mentioned_users': users,
+            'hashtags': hashtags,
+            'referenced_links': links,
+        }
     }
 
     with open('tweets.json', 'w') as f:
