@@ -1,11 +1,5 @@
 '''
-
-
-
-https://www.digitalocean.com/community/tutorials/how-to-crawl-a-web-page-with-scrapy-and-python-3
-
-
-scrapy runspider grupom.py -o ofertas.json
+scrapy runspider grupom.py -o ofertas-grupom.json
 '''
 import scrapy
 
