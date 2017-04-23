@@ -4,6 +4,8 @@
 
 import sys
 import re
+import json
+
 from TwitterSearch import *
 
 
@@ -35,14 +37,20 @@ try:
     users = []
     hashtags = []
     links = []
+    
     for tweet in ts.search_tweets_iterable(tuo):
         users += get_users(tweet['text'])
         hashtags += get_hashtag(tweet['text'])
         links += get_urls(tweet['text'])
     
-    print('Users mentioned: ', ' '.join(set(users)))
-    print('Hashtag: ', ' '.join(set(hashtags)))
-    # print('Links: ', ' '.join(set(links)))
+    data = {
+        'mentioned_users': users,
+        'hashtags': hashtags,
+        'referenced_links': links,
+    }
+
+    with open('tweets.json', 'w') as f:
+        f.write(json.dumps(data))        
 
 except TwitterSearchException as e:
     print(e)
